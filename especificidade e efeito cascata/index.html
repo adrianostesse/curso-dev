@@ -6,7 +6,25 @@
     <title>Especificidade e efeito cascata</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- efeito cascata é a leitura do codigo sempre de cima para baixo, se tiver efeitos para msm seletor ele vai ativando o que esta em baixo-->
+
+<!-- <style>
+    .container-cascata {
+        background-color: blueviolet;
+    }
+</style> -->
+
 <body>
-    
+    <h1>Efeito cascata</h1>
+    <div class="container-cascata">
+        <h2>Container cascata</h2>
+    </div>
+
+<!-- Especificidade é a prioridade que se da ao seletor que esta mais especifico quando for aplicar estilo -->
+    <h1>Especificidade</h1>
+    <div class="container-especificidade">
+        <h2>Container Especificidade</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam neque quidem, ullam in repudiandae nesciunt mollitia architecto vel vitae illo soluta voluptate quas quibusdam illum autem pariatur repellat voluptates exercitationem!</p>
+    </div>
 </body>
 </html>

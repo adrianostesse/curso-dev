@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+/* Efeito cascata */
+.container-cascata {
+    background-color: aqua;
+}
+
+ .container-cascata {
+    background-color: orange;
+} 
+
+/* lendo de cima para baixo ele substitui o azul e fica no laranja */
+
+
+
+/* Especificidade */
+
+.container-especificidade p{
+    background-color: chartreuse;
+}
+
+p {
+    background-color: lightblue;
+}
+
+
+/* #meu-paragrafo {
+    background-color: violet;
+} */
