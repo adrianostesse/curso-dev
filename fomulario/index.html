@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input, select {
+            padding: 8px;
+            margin: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.589);
+            background-color: rgba(232, 245, 245, 0.541);
+        }
+
+        div {
+            border: 1px solid rgba(0, 0, 0, 0.589);
+            display: inline-block;
+            padding: 4px;
+            margin: 2px;
+        }
+        h1, p, form {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastre-se</h1>
+    <p>É rápido e fácil</p>
+    <hr>
+    
+    <form action="#" method="post">
+        <input type="text" name="nome" id="inome" placeholder="Nome" required>
+        <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome" required>
+        <br>
+
+        <input type="email" name="email" id="iemail" placeholder="Email" required>
+        <br>
+
+        <input type="password" name="senha" id="isenha" placeholder="Nova Senha" required>
+        <br>
+
+        <label for="data">Data de Nascimento</label>
+        <br>
+        <select name="data" id="idata" required>
+            <option value="dia">Dia</option>
+        </select>
+
+        <select name="mes" id="imes" required>
+            <option value="mes">Mês</option>
+        </select>
+
+        <select name="ano" id="iano" required>
+            <option value="ano">Ano</option>
+        </select>
+        <br>
+
+        <label for="genero">Gênero</label>
+        <br>
+
+        <div>
+            <label for="genero">Masculino </label>
+            <input type="radio" name="genero" id="masculino" required>
+        </div>
+
+        <div>
+            <label for="genero">Feminino </label>
+            <input type="radio" name="genero" id="feminino" required>
+        </div>
+
+        <div><label for="genero">Helicoptero de Ataque</label><input type="radio" name="genero" id="helicoptero" required></div>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    
+
+<script>
+    var data = document.getElementById("idata");
+
+     for (var dia = 1; dia <= 31; dia++) {
+        var option = document.createElement("option");
+        option.text = + dia;
+        option.value = dia;
+        data.appendChild(option);
+    }
+  
+    var imes = document.getElementById('imes');
+
+    for (var mes = 1; mes <= 12; mes++) {
+        var option = document.createElement("option");
+        option.text = + mes;
+        option.value = mes;
+        imes.appendChild(option);
+    }
+
+    var iano = document.getElementById('iano');
+
+    for (var ano = 1961; ano <= 2023; ano++) {
+        var option = document.createElement("option");
+        option.text = ano;
+        option.value = ano;
+        iano.appendChild(option);
+    }
+</script>
+
+</body>
+</html>
