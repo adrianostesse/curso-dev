@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.fa-instagram, .fa-facebook, .fa-thumbs-up {
+    font-size: 150px;
+    color: red;
+}
+
+.fa-instagram:hover, .fa-facebook:hover{
+    color: lightblue;
+}
+
+.fa-thumbs-up:hover {
+    color: lightseagreen;
+}

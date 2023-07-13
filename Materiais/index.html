@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade e media queries</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/reset.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="Logo">Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#onde-estamos">Onde Estamos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="painel">
+            <div class="info">
+                <h1>Um filme do batman</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus nesciunt eius animi ipsa unde rem, omnis reiciendis aliquid consectetur odit cupiditate voluptatum id aspernatur fuga aut, explicabo quaerat expedita!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tempora veniam repudiandae ullam enim? Aspernatur labore nisi enim explicabo quidem corporis, id dignissimos praesentium fugit accusamus dolore iste impedit tempora?</p>
+            </div>
+
+            <div class="image">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./images/batman-pequena.jpg">
+
+                    <img src="images/batman.jpg" alt="filme do batman">
+                </picture>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

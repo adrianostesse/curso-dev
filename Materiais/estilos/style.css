@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body {
+    background-color: aliceblue;
+}
+
+.cabecalho {
+    padding: 10px 5px;
+    background-color: lightgreen;
+    
+}
+
+.cabecalho .logo {
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+.cabecalho nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    padding: 30px;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main .info {
+    font-size: 18px;
+}
+
+main p {
+    font-size: 16px;
+}
+
+.image img {
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .cabecalho {
+        text-align: center;
+    }
+    .cabecalho nav {
+        float: none;
+    }
+    .cabecalho nav li {
+        display: block;
+    }
+}
+
+/* @media (max-width: 762px) {
+    .cabecalho {
+        background-color: red;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        background-color: aqua;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        color: blue;
+    }
+} */
